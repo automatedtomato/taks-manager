@@ -3,6 +3,8 @@ package com.automatedtomato.tasks.mappers.impl;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.stereotype.Component;
+
 import com.automatedtomato.tasks.domain.dto.TaskListDto;
 import com.automatedtomato.tasks.domain.entities.Task;
 import com.automatedtomato.tasks.domain.entities.TaskList;
@@ -11,6 +13,7 @@ import com.automatedtomato.tasks.mappers.TaskListMapper;
 import com.automatedtomato.tasks.mappers.TaskMapper;
 
 // 詳しくは、TaskMapper.javaを参照
+@Component
 public class TaskListMapperImpl implements TaskListMapper {
 
     // TaskMapperを注入（依存性の注入: Dependency Injection）
