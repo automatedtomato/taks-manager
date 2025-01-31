@@ -22,4 +22,6 @@ public interface TaskRepository extends JpaRepository<Task, UUID> {
     Optional<Task> findByTaskListIdAndId(UUID taskListLd, UUID id);
     // Springは下記のようなクエリを自動的に生成する
     // `SELECT t FROM Task t WHERE task_list_id = ?1 AND t.id = ?2`
+
+    void deleteByTaskListIdAndId(UUID taskListId, UUID taskLd);
 }
